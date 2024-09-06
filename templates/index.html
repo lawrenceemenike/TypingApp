@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Most Dangerous Writing App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='squibler-logo.png') }}" alt="Squibler">
+        <button class="sign-up">Sign Up</button>
+    </header>
+    <main>
+        <h1>The Most <span class="dangerous">Dangerous</span> Writing App</h1>
+        <p>Don't stop writing, or all progress will be lost.</p>
+        <div class="session-length">
+            <span>Session length: 5 minutes</span>
+            <button class="edit-session-length">✏️</button>
+        </div>
+        <div class="buttons">
+            <button id="generate-prompt">Generate a Prompt</button>
+            <button id="start-writing">Start Writing w/o Prompt</button>
+        </div>
+    </main>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

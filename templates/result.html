@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result - The Most Dangerous Writing App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body class="result-page">
+    <h1>Your Writing</h1>
+    <div id="result-text"></div>
+    <button id="download-btn">Download as .txt</button>
+    <script src="{{ url_for('static', filename='result.js') }}"></script>
+</body>
+</html>

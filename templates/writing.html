@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing - The Most Dangerous Writing App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="writing-page">
+        <div id="timer">2:00</div>
+        <div id="word-count">0 words</div>
+        <textarea id="writing-area" placeholder="Start typing here..."></textarea>
+    </div>
+    <script src="{{ url_for('static', filename='writing.js') }}"></script>
+</body>
+</html>
