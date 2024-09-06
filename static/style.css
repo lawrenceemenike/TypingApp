@@ -1,0 +1,153 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+header img {
+    height: 30px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.dangerous {
+    color: #ff4a4a;
+}
+
+p {
+    color: #666;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+button {
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+}
+
+.sign-up {
+    background-color: white;
+    border: 1px solid #ccc;
+    color: #333;
+}
+
+.session-length {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    color: #666;
+    background-color: #f0f0f0;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+.edit-session-length {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    color: #666;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+#generate-prompt {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #333;
+}
+
+#start-writing {
+    background-color: #ff4a4a;
+    color: white;
+    border: none;
+}
+
+#generate-prompt:hover, #start-writing:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.writing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 90vh;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+#timer, #word-count {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+#writing-area {
+    width: 100%;
+    height: calc(100% - 80px); /* Subtract the space taken by timer and word count */
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    box-sizing: border-box;
+}
+
+/* Ensure the textarea doesn't overflow on smaller screens */
+@media (max-height: 600px) {
+    .writing-page {
+        height: 80vh;
+    }
+}
